@@ -1,0 +1,10 @@
+t=0:0.01:10*pi;
+y1 = sin(t+1);
+y2 = sin(-t+1);
+
+figure;
+grid on;
+plot(t, y1);
+hold on;
+plot(t,y2);
+hold off;
