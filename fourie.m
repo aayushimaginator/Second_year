@@ -1,0 +1,14 @@
+f = 1;
+T = 30;
+fs = 1000;
+t = 0: 1/fs : T;
+y = 0.5*square(t+pi/2) + 0.5;
+x = 0.5 + 2/pi*(cos(t) - cos(3*t)/3 + cos(5*t)/5 - cos(7*t)/7 + cos(9*t)/9 - cos(11*t)/11 + cos(13*t)/13 - cos(15*t)/15);
+plot(t, y);
+hold on;
+plot(t, x);
+ylabel('Amplitude');
+title('Square Wave');
+grid on;
+legend('Square Wave', 'Cosine Wave');
+hold off;
